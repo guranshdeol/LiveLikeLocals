@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour | LiveLikeLocals</title>
+    <link rel="icon" href="../Images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+    <style>
+
+.btn-primary {
+    background-color: black;
+    border-color: black;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+    border-color: #444; 
+}
+
+.footer{
+
+width: 100%;
+background-color: rgb(0, 0, 0);
+
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.foot{
+padding: 20px 0;
+}
+
+.footer-content{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+
+.footlinks h4{
+margin-top: 30px;
+font-size: 20px;
+font-weight: 600;
+color: white;
+margin-bottom: 30px;
+position: relative;
+}
+
+
+.footlinks h4::before{
+content: "";
+position: absolute;
+height: 2px;
+width: 70px;
+left: 0;
+bottom: -7px;
+background: white;
+}
+
+.footlinks ul li{
+margin-bottom: 15px;
+}
+
+.footlinks ul li a{
+font-size: 17px;
+color: #dddddd;
+display: block;
+transition: ease 0.30s;
+}
+
+.footlinks ul li a:hover{
+transform: translate(6px);
+color: white;
+}
+
+.social a{
+font-size: 25px;
+margin: 4px;
+height: 40px;
+width: 40px;
+color: rgb(0, 0, 0);
+background-color: white;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+transition: ease 0.30s;
+text-decoration: none;
+}
+.social a:hover{
+transform: scale(1.2);
+}
+
+.end{
+text-align: center;
+padding: 60px 0 12px 0;
+}
+
+.end p{
+font-size: 15px;
+color: white;
+letter-spacing: 1px;
+font-weight: 300;
+}
+
+nav, .navbar, .navbar a, nav ul li a {
+    font-family: "Montserrat"; 
+  }
+
+  nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; 
+  }
+  
+  nav .logo{
+    width: 150px;
+    margin: 2vh;
+    margin-left: 8%;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  
+  .navbar{
+    display: flex;
+    margin-right: 4vh;
+    z-index: 5;
+  }
+  
+  
+  .navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s; 
+  }
+  
+  .navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+  }
+  
+        body {
+            background-color: #E8E8E8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4c8c40, #343a40);
+            color: white;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        nav a.nav-link {
+            color: #fff !important;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a.nav-link:hover {
+            color: #d4edda !important;
+        }
+
+        .hero {
+            background: url('../Images/oh.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .btn-cta {
+            padding: 15px 30px;
+            background-color: #000000;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-cta:hover {
+            background-color: #6c757d;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .host-card {
+        max-width: 300px; 
+        padding: 20px;
+        margin: 0 auto; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+
+    .host-card img {
+    display: block; 
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+    .host-card h3 {
+        font-size: 1.25rem; 
+    }
+
+    .host-card p {
+        font-size: 0.9rem; 
+    }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="../Images/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
+        
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./try.html">Bookings</a>
+                <a href="./index.html#package">Packages</a>
+                <a href="./about.html">About Us</a>
+                <a href="./knowus.html">Know Us</a>
+                <a href="./blog1.html">Blog</a>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="text-center">
+            <h2>Discover journeys woven by local hearts.</h2>
+          
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="container my-5">
+        <h2 class="text-center mb-4">Available Experiences</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card experience-card p-3">
+                    <h3>Traditional Cooking Class</h3>
+                    <p>Learn how to cook traditional dishes with a local expert.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experienceModal" data-experience="Traditional Cooking Class">Book Now</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card experience-card p-3">
+                    <h3>City Walking Tour</h3>
+                    <p>Explore hidden gems of the city with a local guide.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#experienceModal" data-experience="City Walking Tour">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="hosts" class="container my-5">
+    <h2 class="text-center mb-4">Meet Our Hosts</h2>
+    <div class="row">
+        
+        <div class="col-md-3 mb-4">
+            <div class="card host-card p-3 text-center">
+                <img src="../Images/u1.jpg" class="img-fluid rounded-circle mb-3" alt="Host 1">
+                <h3>Jessica Anderson</h3>
+                <p>Expert in local cuisine and cultural tours.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Jessica Anderson">View Profile</button>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card host-card p-3 text-center">
+                <img src="../Images/u2.jpg" class="img-fluid rounded-circle mb-3" alt="Host 2">
+                <h3>Olivia Grace</h3>
+                <p>Historian and city tour expert.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Olivia Grace">View Profile</button>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card host-card p-3 text-center">
+                <img src="../Images/u3.jpg" class="img-fluid rounded-circle mb-3" alt="Host 3">
+                <h3>Jack Smith</h3>
+                <p>Adventure guide and hiking enthusiast.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Jack Smith">View Profile</button>
+            </div>
+        </div>
+        
+        <div class="col-md-3 mb-4">
+            <div class="card host-card p-3 text-center">
+                <img src="../Images/u4.jpg" class="img-fluid rounded-circle mb-3" alt="Host 4">
+                <h3>Michael Brown</h3>
+                <p>Local traditional crafts artist.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hostModal" data-host="Michael Brown">View Profile</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact a Host</h2>
+        <div class="card p-4">
+            <form id="contact-form" onsubmit="submitContactForm(event)">
+                <div class="mb-3">
+                    <label for="contact-name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="contact-name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="host" class="form-label">Choose a Host</label>
+                    <select class="form-select" id="host" required>
+                        <option value="" disabled selected>Select a host</option>
+                        <option value="Jessica Anderson">Jessica Anderson</option>
+                        <option value="Olivia Grace">Olivia Grace</option>
+                        <option value="Jack Smith">Jack Smith</option>
+                        <option value="Michael Brown">Michael Brown</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+   
+    
+    <!-- footer -->
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+                
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-twitter' ></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-wordpress' ></i></a>
+                        <a href="" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="end">
+            <p>Copyright © 2024 LiveLikeLocals All Rights Reserved.</p>
+        </div>
+    </section>
+      <!-- end of footer -->
+
+    <!-- Bootstrap Modals -->
+    <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="experienceModalLabel">Experience Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+               
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="hostModal" tabindex="-1" aria-labelledby="hostModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hostModalLabel">Host Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+     
+        document.getElementById('experienceModal').addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var experience = button.getAttribute('data-experience');
+            var modalTitle = document.querySelector('#experienceModalLabel');
+            var modalBody = document.querySelector('#experienceModal .modal-body');
+    
+            modalTitle.textContent = experience;
+    
+            if (experience === "Traditional Cooking Class") {
+                modalBody.innerHTML = `
+                    <p>Join us for an authentic cooking experience where you’ll learn how to make traditional dishes using local ingredients. A local chef will guide you through the process, sharing tips and stories behind each recipe.</p>
+                    <ul>
+                        <li>Duration: 3 hours</li>
+                        <li>Location: Local kitchen in the city center</li>
+                        <li>Includes: Ingredients, recipe handout, and refreshments</li>
+                        <li>Capacity: Up to 8 participants</li>
+                        <li>Cost: $50 per person</li>
+                    </ul>
+                    <button id="confirmBookingButton" class="btn btn-primary mt-3">Confirm Booking</button>
+                `;
+            } else if (experience === "City Walking Tour") {
+                modalBody.innerHTML = `
+                    <p>Discover hidden gems and historical landmarks with a local guide. The tour will take you through popular sights and off-the-beaten-path locations.</p>
+                    <ul>
+                        <li>Duration: 2 hours</li>
+                        <li>Route: Main city landmarks, hidden alleys, and local markets</li>
+                        <li>Includes: Refreshments and a map of the tour route</li>
+                        <li>Cost: $20 per person</li>
+                    </ul>
+                    <button id="confirmBookingButton" class="btn btn-primary mt-3">Confirm Booking</button>
+                `;
+            } else {
+                modalBody.textContent = 'Details about ' + experience + ' will be displayed here.';
+            }
+    
+            
+            setTimeout(() => {
+                const confirmButton = document.getElementById('confirmBookingButton');
+                if (confirmButton) {
+                    confirmButton.addEventListener('click', function () {
+                        alert('Your booking for ' + experience + ' has been confirmed!');
+                       
+                        $('#experienceModal').modal('hide');
+                    });
+                }
+            }, 100); 
+        });
+
+
+
+        document.getElementById('hostModal').addEventListener('show.bs.modal', function (event) {
+
+        const button = event.relatedTarget;
+        const host = button.getAttribute('data-host');
+        
+      
+        const modalTitle = document.querySelector('#hostModalLabel');
+        const modalBody = document.querySelector('#hostModal .modal-body');
+        
+     
+        let hostDetails = '';
+
+        switch (host) {
+            case 'Jessica Anderson':
+                modalTitle.textContent = 'Jessica Anderson\'s Profile';
+                hostDetails = `
+                    <p>Jessica is an experienced chef specializing in traditional cuisine. She has been hosting cultural cooking classes for over 10 years, where she shares the rich history behind each dish. Her classes are immersive, offering insights into local ingredients and cooking methods.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 10+ years</li>
+                        <li><strong>Specialty:</strong> Traditional local dishes</li>
+                        <li><strong>Languages:</strong> English, French</li>
+                    </ul>
+                `;
+                break;
+            case 'Olivia Grace':
+                modalTitle.textContent = 'Olivia Grace\'s Profile';
+                hostDetails = `
+                    <p>Olivia is a passionate historian and expert in city tours. She has a degree in History and enjoys taking travelers through both famous and hidden historical sites, sharing stories and legends along the way.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 7+ years</li>
+                        <li><strong>Specialty:</strong> Historical landmarks and cultural sites</li>
+                        <li><strong>Languages:</strong> English, Spanish</li>
+                    </ul>
+                `;
+                break;
+            case 'Jack Smith':
+                modalTitle.textContent = 'Jack Smith\'s Profile';
+                hostDetails = `
+                    <p>Jack is an outdoor enthusiast and adventure guide who loves leading hiking and trekking tours. He knows the best trails and scenic spots around and ensures a safe yet thrilling experience for his guests.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 5+ years</li>
+                        <li><strong>Specialty:</strong> Hiking, outdoor adventure</li>
+                        <li><strong>Languages:</strong> English, German</li>
+                    </ul>
+                `;
+                break;
+            case 'Michael Brown':
+                modalTitle.textContent = 'Michael Brown\'s Profile';
+                hostDetails = `
+                    <p>Michael is a traditional crafts artist, specializing in pottery and woodwork. His workshops offer an authentic experience where participants can create their own unique pieces while learning about local craftsmanship techniques.</p>
+                    <ul>
+                        <li><strong>Experience:</strong> 15+ years</li>
+                        <li><strong>Specialty:</strong> Pottery, woodwork</li>
+                        <li><strong>Languages:</strong> English, Italian</li>
+                    </ul>
+                `;
+                break;
+            default:
+                modalTitle.textContent = 'Host Profile';
+                hostDetails = '<p>Host details will be displayed here.</p>';
+                break;
+        }
+
+  
+        modalBody.innerHTML = hostDetails;
+    });
+
+
+
+    function submitContactForm(event) {
+    event.preventDefault();
+    const name = document.getElementById('contact-name').value;
+    const selectedHost = document.getElementById('host').value;
+    const message = document.getElementById('message').value;
+
+    alert(`Message sent to ${selectedHost} from ${name}: ${message}`);
+}
+    
+    </script>
+
+    
+
+
+</body>
+
+</html>
