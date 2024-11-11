@@ -1,0 +1,273 @@
+.booking-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 20vh; /* Adjust to center vertically */
+}
+
+.booking-button {
+  padding: 8px 10px;
+  background-color: #039292;;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.booking-button:hover {
+  background-color: #14d9d9;
+  transform: scale(1.05);
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav, nav .navbar, nav .navbar a, nav ul li a { 
+  font-family: "Montserrat" !important;
+}
+
+body { 
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: Arial, sans-serif;  
+    background-color: #f9f9f9; 
+    /* background: linear-gradient(90deg, #F8E5C3, #F2CCB2); */
+} 
+
+.container {
+    max-width: 1200px;
+    z-index:-1;
+    margin: 50px auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+}
+
+button:hover {
+    background-color: #1F8576;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+h2 span {
+    color: #AD1457;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* position: relative; */
+}
+
+.discount-tag {
+    top: 10px;
+    left: 10px;
+    background-color: #AD1457;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 260px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #424242;
+    margin: 10px 0;
+}
+
+.price span {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: #999;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color:#26A69A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e6006f;
+}
+
+  nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    z-index: 1000;
+  }
+  
+  nav .logo{
+    width: 150px;
+    margin: 2vh;
+    margin-left: 8%;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  
+  .navbar{
+    display: flex;
+    margin-right: 4vh;
+    z-index: 5;
+  }
+  
+  
+  .navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s; 
+  }
+  
+  .navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+  }
+
+
+  .footer{
+    margin-top: 80px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .foot{
+    padding: 20px 0;
+  }
+  
+  .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  
+  .footlinks h4{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .footlinks h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -7px;
+    background: white;
+  }
+  
+  .footlinks ul li{
+    margin-bottom: 15px;
+  }
+  
+  .footlinks ul li a{
+    font-size: 17px;
+    color: #dddddd;
+    display: block;
+    transition: ease 0.30s;
+  }
+  
+  .footlinks ul li a:hover{
+    transform: translate(6px);
+    color: white;
+  }
+  
+  .social a{
+    font-size: 25px;
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: ease 0.30s;
+    text-decoration: none;
+  }
+  
+  .social a:hover{
+    transform: scale(1.2);
+  }
+  
+  .end{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 12px;
+  }
+  
+  .end p{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
